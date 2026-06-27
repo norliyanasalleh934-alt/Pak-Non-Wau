@@ -1,0 +1,458 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f8f3ed;
+    color: #333;
+}
+
+/* NAVIGATION (KONSISTEN SEMUA PAGE) */
+nav {
+    background: #1b140f;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 20px;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+nav a:hover {
+    background: #d49a28;
+    color: black;
+}
+
+/* HERO (HOME) */
+.hero {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    background: #f8f3ed;
+}
+
+.hero img {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #d49a28;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.hero h1 {
+    font-size: 50px;
+    color: #ffffff;
+}
+
+.hero h2 {
+    font-size: 22px;
+    color: #ffe100;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    background: #d49a28;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: #b77f1d;
+}
+
+/* SECTION WRAPPER */
+.container {
+    width: 85%;
+    margin: auto;
+    padding: 60px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* CARD */
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ABOUT PAGE */
+.about-hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 10%;
+    gap: 40px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h1 {
+    font-size: 45px;
+    color: #1b140f;
+}
+
+.about-text h1 span {
+    color: #d49a28;
+}
+
+.about-text h3 {
+    margin: 15px 0;
+    color: #8b5a2b;
+}
+
+.about-text p {
+    line-height: 1.8;
+    max-width: 500px;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+}
+
+/* MISSION VISION */
+.mission-vision {
+    display: flex;
+    gap: 20px;
+    padding: 0 10% 60px;
+    flex-wrap: wrap;
+}
+
+.box {
+    flex: 1;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.box h2 {
+    color: #d49a28;
+    margin-bottom: 10px;
+}
+
+/* HERITAGE CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 20px 10%;
+}
+
+.cards .card {
+    text-align: center;
+}
+
+.cards img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 0;
+}
+
+/* PAGE HEADER */
+
+.page-header {
+
+    background: #f8f3ed;
+
+    padding: 70px 10%;
+
+    text-align: center;
+
+}
+
+.page-header h1 {
+
+    font-size: 55px;
+
+    color: #1b140f;
+
+    margin-bottom: 15px;
+
+}
+
+.page-header span {
+
+    color: #d49a28;
+
+}
+
+.page-header p {
+
+    max-width: 700px;
+
+    margin: auto;
+
+    line-height: 1.8;
+
+    color: #555;
+
+}
+
+
+/* GALLERY */
+
+.gallery-section {
+
+    padding: 60px 10%;
+
+}
+
+.gallery-section h2 {
+
+    text-align: center;
+
+    margin-bottom: 40px;
+
+    color: #1b140f;
+
+    font-size: 35px;
+
+}
+
+.gallery-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 30px;
+
+}
+
+.gallery-card {
+
+    background: white;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .12);
+
+    transition: .3s;
+
+}
+
+.gallery-card:hover {
+
+    transform: translateY(-8px);
+
+}
+
+.gallery-card img {
+
+    width: 100%;
+
+    height: 260px;
+
+    object-fit: cover;
+
+}
+
+.gallery-card h3 {
+
+    padding: 18px;
+
+    text-align: center;
+
+    color: #8b5a2b;
+
+}
+
+
+/* CONTACT */
+
+.contact-section {
+
+    padding: 60px 10%;
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+
+    gap: 30px;
+
+}
+
+.contact-card {
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+
+}
+
+.contact-card h2 {
+
+    color: #8b5a2b;
+
+    margin-bottom: 20px;
+
+}
+
+.contact-card p {
+
+    line-height: 2;
+
+    font-size: 17px;
+
+}
+
+body {
+    background-color: #f8f3ed;
+    color: #333;
+
+    background-image:
+        radial-gradient(rgba(212, 154, 40, 0.08) 1px, transparent 1px),
+        radial-gradient(rgba(139, 90, 43, 0.05) 1px, transparent 1px);
+
+    background-size: 40px 40px;
+    background-position: 0 0, 20px 20px;
+}
+
+/* Decorative Pattern */
+
+body::before {
+
+    content: "";
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    pointer-events: none;
+
+    opacity: .08;
+
+    background-image:
+
+        linear-gradient(45deg,
+            transparent 48%,
+            #d49a28 49%,
+            transparent 51%),
+
+        linear-gradient(-45deg,
+            transparent 48%,
+            #d49a28 49%,
+            transparent 51%);
+
+    background-size: 80px 80px;
+
+    z-index: -1;
+
+}
+
+.contact-card a {
+    display: inline-block;
+    margin-top: 15px;
+    background: #8b5e3c;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.contact-card a:hover {
+    background: #6f472a;
+}
+
+/* ===========================
+   HERO BACKGROUND
+=========================== */
+
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Background blur */
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+
+    background: url("photo5.jpg") center center/cover no-repeat;
+
+    filter: blur(3px);
+    transform: scale(1.05);
+    z-index: 0;
+}
+
+/* Overlay gelap */
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.35);
+    z-index: 1;
+}
+
+/* Semua content */
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
